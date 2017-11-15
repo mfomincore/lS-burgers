@@ -1,0 +1,64 @@
+.hero {
+    display: flex;
+    background-image: url('../img/section1/section1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    // space-beetwen
+    margin-left: auto;
+}
+
+.main {
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+}
+
+.main__img {
+    width: 50%;
+    display: block;
+}
+
+.hero__conteiner {
+    flex: 1;
+}
+
+.main__description {
+    color: #fff;
+    width: 50%;
+}
+
+.menu__nav {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &:after {
+        content: "";
+        widows: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #fff;
+        display: block;
+        margin: 0 16px;
+    }
+}
+
+.menu__item {
+    &:last-child {
+        .menu__link {
+            display: none;
+        }
+    }
+}
